@@ -59,24 +59,36 @@
   -webkit-filter: contrast(1.72) brightness(1.2) opacity(0.75) sepia(0.2);
   filter: contrast(1.72) brightness(1.2) opacity(0.75) sepia(0.2); }
 
-.fongsor.light-blur {
+.fongsor.light.blur {
   -webkit-filter: grayscale(1) contrast(1.45) opacity(0.88) brightness(0.8) sepia(0.5) blur(1px);
   filter: grayscale(1) contrast(1.45) opacity(0.88) brightness(0.8) sepia(0.5) blur(1px); }
 
-.fongsor.deep-blur {
+.fongsor.deep.blur {
   -webkit-filter: grayscale(1) contrast(1.45) opacity(0.88) brightness(0.8) sepia(0.5) blur(2px);
   filter: grayscale(1) contrast(1.45) opacity(0.88) brightness(0.8) sepia(0.5) blur(2px); }
 
+.mi {
+  -webkit-filter: sepia(0.68) contrast(1.18) grayscale(0.1);
+  filter: sepia(0.68) contrast(1.18) grayscale(0.1); }
+
+.mi.light.blur {
+  -webkit-filter: sepia(0.68) contrast(1.18) grayscale(0.1) blur(1px);
+  filter: sepia(0.68) contrast(1.18) grayscale(0.1) blur(1px); }
+
+.mi.deep.blur {
+  -webkit-filter: sepia(0.68) contrast(1.18) grayscale(0.1) blur(2px);
+  filter: sepia(0.68) contrast(1.18) grayscale(0.1) blur(2px); }
+
 /* test */
 .test {
-  -webkit-filter: grayscale(1) contrast(1.2) opacity(0.88) brightness(0.8) sepia(0.5);
-  filter: grayscale(1) contrast(1.2) opacity(0.88) brightness(0.8) sepia(0.5); }
+  -webkit-filter: sepia(0.68) contrast(1.18) grayscale(0.1);
+  filter: sepia(0.68) contrast(1.18) grayscale(0.1); }
 
-.test.light-blur {
+.test.light.blur {
   -webkit-filter: grayscale(1) contrast(1.45) opacity(0.88) brightness(0.8) sepia(0.5) blur(1px);
   filter: grayscale(1) contrast(1.45) opacity(0.88) brightness(0.8) sepia(0.5) blur(1px); }
 
-.test.deep-blur {
+.test.deep.blur {
   -webkit-filter: grayscale(1) contrast(1.45) opacity(0.88) brightness(0.8) sepia(0.5) blur(2px);
   filter: grayscale(1) contrast(1.45) opacity(0.88) brightness(0.8) sepia(0.5) blur(2px); }
 
