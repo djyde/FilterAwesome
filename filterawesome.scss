@@ -76,3 +76,11 @@ $fongsor: contrast(1.72) brightness(1.2) opacity(0.75) sepia(0.2);
 .fongsor{
   @include filter($fongsor);
 }
+
+.fongsor.light-blur{
+  @include filter($gill $light-blur);
+}
+
+.fongsor.deep-blur{
+  @include filter($gill $deep-blur);
+}
