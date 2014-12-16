@@ -58,7 +58,7 @@ $kawa: opacity(0.9) contrast(1.5) brightness(0.9) saturate(1.5);
 }
 
 /* gill */
-$gill: contrast(1.3) sepia(0.3) saturate(1.3) hue-rotate(-10deg) brightness(0.95);
+$gill: grayscale(1) contrast(1.45) opacity(0.88) brightness(0.8) sepia(0.5);
 .gill{
   @include filter($gill);
 }
@@ -77,10 +77,37 @@ $fongsor: contrast(1.72) brightness(1.2) opacity(0.75) sepia(0.2);
   @include filter($fongsor);
 }
 
-.fongsor.light-blur{
+.fongsor.light.blur{
   @include filter($gill $light-blur);
 }
 
-.fongsor.deep-blur{
+.fongsor.deep.blur{
+  @include filter($gill $deep-blur);
+}
+
+$mi: sepia(0.68) contrast(1.18) grayscale(0.1);
+.mi{
+  @include filter($mi);
+}
+
+.mi.light.blur{
+  @include filter($mi $light-blur);
+}
+
+.mi.deep.blur{
+  @include filter($mi $deep-blur);
+}
+
+/* test */
+$test: sepia(0.68) contrast(1.18) grayscale(0.1);
+.test{
+  @include filter($test);
+}
+
+.test.light.blur{
+  @include filter($gill $light-blur);
+}
+
+.test.deep.blur{
   @include filter($gill $deep-blur);
 }
