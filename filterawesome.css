@@ -3,13 +3,22 @@
 .B1 {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
+  .B1 .light.blur {
+    -webkit-filter: grayscale(100%) blur(2px);
+    filter: grayscale(100%) blur(2px); }
+  .B1 .deep.blur {
+    -webkit-filter: grayscale(100%) blur(4px);
+    filter: grayscale(100%) blur(4px); }
 
-.B1.light.blur {
-  -webkit-filter: grayscale(100%) blur(2px);
-  filter: grayscale(100%) blur(2px); }
-
-.B1.deep.blur {
-  -webkit-filter: grayscale(100%) blur(4px);
-  filter: grayscale(100%) blur(4px); }
+/* kawa */
+.kawa {
+  -webkit-filter: opacity(90%) contrast(170%) brightness(0.9) saturate(150%);
+  filter: opacity(90%) contrast(170%) brightness(0.9) saturate(150%); }
+  .kawa .light.blur {
+    -webkit-filter: opacity(90%) contrast(170%) brightness(0.9) saturate(150%) blur(2px);
+    filter: opacity(90%) contrast(170%) brightness(0.9) saturate(150%) blur(2px); }
+  .kawa .deep.blur {
+    -webkit-filter: opacity(90%) contrast(170%) brightness(0.9) saturate(150%) blur(4px);
+    filter: opacity(90%) contrast(170%) brightness(0.9) saturate(150%) blur(4px); }
 
 /*# sourceMappingURL=filterawesome.css.map */

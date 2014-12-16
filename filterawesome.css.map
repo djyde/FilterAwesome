@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": ";;AAcA,GAAG;EAbF,cAAc,EAWV,eAAe;EAVnB,MAAM,EAUF,eAAe;;AAMpB,cAAc;EAjBb,cAAc,EAkBE,yBAAe;EAjB/B,MAAM,EAiBU,yBAAe;;AAGhC,aAAa;EArBZ,cAAc,EAsBE,yBAAc;EArB9B,MAAM,EAqBU,yBAAc",
+"mappings": ";;AAcA,GAAG;EAbD,cAAc,EAWX,eAAe;EAVlB,MAAM,EAUH,eAAe;EAKlB,eAAW;IAhBX,cAAc,EAiBI,yBAAe;IAhBjC,MAAM,EAgBY,yBAAe;EAGjC,cAAU;IApBV,cAAc,EAqBI,yBAAc;IApBhC,MAAM,EAoBY,yBAAc;;;AAOlC,KAAK;EA5BH,cAAc,EA0BT,0DAA0D;EAzB/D,MAAM,EAyBD,0DAA0D;EAK/D,iBAAW;IA/BX,cAAc,EAgCI,oEAAiB;IA/BnC,MAAM,EA+BY,oEAAiB;EAGnC,gBAAU;IAnCV,cAAc,EAoCI,oEAAgB;IAnClC,MAAM,EAmCY,oEAAgB",
 "sources": ["filterawesome.scss"],
 "names": [],
 "file": "filterawesome.css"

@@ -1,6 +1,6 @@
 @mixin filter($arg){
-	-webkit-filter: $arg;
-	filter: $arg;
+  -webkit-filter: $arg;
+  filter: $arg;
 }
 
 $light-blur: blur(2px);
@@ -13,13 +13,28 @@ $deep-blur: blur(4px);
 $B1: grayscale(100%);
 
 .B1{
-	@include filter($B1);
+  @include filter($B1);
+
+  .light.blur{
+    @include filter($B1 $light-blur);
+  }
+
+  .deep.blur{
+    @include filter($B1 $deep-blur);
+  }
 }
 
-.B1.light.blur{
-	@include filter($B1 $light-blur);
-}
+/* kawa */
+$kawa: opacity(90%) contrast(170%) brightness(0.9) saturate(150%);
 
-.B1.deep.blur{
-	@include filter($B1 $deep-blur);
+.kawa{
+  @include filter($kawa);
+
+  .light.blur{
+    @include filter($kawa $light-blur);
+  }
+
+  .deep.blur{
+    @include filter($kawa $deep-blur);
+  }
 }
