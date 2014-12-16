@@ -1,0 +1,15 @@
+/* main filter */
+/* B1 */
+.B1 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+.B1.light.blur {
+  -webkit-filter: grayscale(100%) blur(2px);
+  filter: grayscale(100%) blur(2px); }
+
+.B1.deep.blur {
+  -webkit-filter: grayscale(100%) blur(4px);
+  filter: grayscale(100%) blur(4px); }
+
+/*# sourceMappingURL=filterawesome.css.map */

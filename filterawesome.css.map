@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;AAcA,GAAG;EAbF,cAAc,EAWV,eAAe;EAVnB,MAAM,EAUF,eAAe;;AAMpB,cAAc;EAjBb,cAAc,EAkBE,yBAAe;EAjB/B,MAAM,EAiBU,yBAAe;;AAGhC,aAAa;EArBZ,cAAc,EAsBE,yBAAc;EArB9B,MAAM,EAqBU,yBAAc",
+"sources": ["filterawesome.scss"],
+"names": [],
+"file": "filterawesome.css"
+}

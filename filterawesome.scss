@@ -1,0 +1,25 @@
+@mixin filter($arg){
+	-webkit-filter: $arg;
+	filter: $arg;
+}
+
+$light-blur: blur(2px);
+$deep-blur: blur(4px);
+
+
+/* main filter */
+
+/* B1 */
+$B1: grayscale(100%);
+
+.B1{
+	@include filter($B1);
+}
+
+.B1.light.blur{
+	@include filter($B1 $light-blur);
+}
+
+.B1.deep.blur{
+	@include filter($B1 $deep-blur);
+}
