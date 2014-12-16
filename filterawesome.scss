@@ -70,3 +70,9 @@ $gill: contrast(1.3) sepia(0.3) saturate(1.3) hue-rotate(-10deg) brightness(0.95
 .gill.deep.blur{
   @include filter($gill $light-blur);
 }
+
+/* fongsor */
+$fongsor: contrast(1.72) brightness(1.2) opacity(0.75) sepia(0.2);
+.fongsor{
+  @include filter($fongsor);
+}

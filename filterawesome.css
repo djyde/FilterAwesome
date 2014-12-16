@@ -54,4 +54,9 @@
   -webkit-filter: contrast(1.3) sepia(0.3) saturate(1.3) hue-rotate(-10deg) brightness(0.95) blur(1px);
   filter: contrast(1.3) sepia(0.3) saturate(1.3) hue-rotate(-10deg) brightness(0.95) blur(1px); }
 
+/* fongsor */
+.fongsor {
+  -webkit-filter: contrast(1.72) brightness(1.2) opacity(0.75) sepia(0.2);
+  filter: contrast(1.72) brightness(1.2) opacity(0.75) sepia(0.2); }
+
 /*# sourceMappingURL=filterawesome.css.map */
