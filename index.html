@@ -3,9 +3,10 @@
 	<head>
 		<title>FilterAwesome</title>
 		<link rel="stylesheet" type="text/css" href="static/css/semantic.min.css">
+		<link rel="stylesheet" type="text/css" href="filterawesome.css">
 		<link href='http://fonts.useso.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
     	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-
+    	<script type="text/javascript" src="static/js/zepto.min.js"></script>
 		<style type="text/css">
 			body{
 				margin: 0;
@@ -19,7 +20,38 @@
 			header{
 				text-align: center;
 			}
+			footer{
+				text-align: center;
+				margin: 24px;
+			}
 		</style>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var show = $('.show')
+				$('.fs').change(function(){
+					switch($(this).val()){
+						case 'B1':
+							show.removeClass().addClass('ui image centered show B1');
+							break;
+						case 'kawa':
+							show.removeClass().addClass('ui image centered show kawa');
+							break;
+						case 'gill':
+							show.removeClass().addClass('ui image centered show gill');
+							break
+						case 'fongsor':
+							show.removeClass().addClass('ui image centered show fongsor');
+							break
+						case 'mi':
+							show.removeClass().addClass('ui image centered show mi');
+							break
+
+					}
+				})
+			})
+		</script>
+
 	</head>
 
 	<body>
@@ -33,6 +65,16 @@
 			</div>
 		</header>
 		<div class="ui header horizontal divider">Showcase</div>
+		<div style="text-align: center; margin-top: 24px; margin-bottom: 24px;">
+			<select class="fs">
+				<option>Select a filter</option>
+				<option value="B1">B1</option>
+				<option value="kawa">kawa</option>
+				<option value="gill">gill</option>
+				<option value="fongsor">fongsor</option>
+				<option value="mi">mi</option>
+			</select>				
+		</div>
 		<div class="ui grid">
 			<div class="center aligned two column row">
 				<div class="column">
@@ -40,10 +82,17 @@
 					
 				</div>
 				<div class="column">
-					<img class="ui image centered" src="http://7mnoy7.com1.z0.glb.clouddn.com/pho.jpg?imageView2/2/w/640/q/100">
+					<img class="ui image centered show" src="http://7mnoy7.com1.z0.glb.clouddn.com/pho.jpg?imageView2/2/w/640/q/100">
 				</div>
 			</div>
+
 		</div>
-		
+		<div class="ui header horizontal divider">Usage</div>
+		<div class="ui ordered steps">
+			
+		</div>
+		<footer>
+			Create by Randy
+		</footer>
 	</body>
 </html>
