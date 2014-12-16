@@ -1,24 +1,57 @@
+/* blur */
+.light.blur {
+  -webkit-filter: blur(1px);
+  filter: blur(1px); }
+
+.deep.blur {
+  -webkit-filter: blur(2px);
+  filter: blur(2px); }
+
 /* main filter */
+/*
+
+1.B1
+2.kawa
+3.gill
+
+*/
 /* B1 */
 .B1 {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
-  .B1 .light.blur {
-    -webkit-filter: grayscale(100%) blur(2px);
-    filter: grayscale(100%) blur(2px); }
-  .B1 .deep.blur {
-    -webkit-filter: grayscale(100%) blur(4px);
-    filter: grayscale(100%) blur(4px); }
+  -webkit-filter: grayscale(1) brightness(1.2);
+  filter: grayscale(1) brightness(1.2); }
+
+.B1.light.blur {
+  -webkit-filter: grayscale(1) brightness(1.2) blur(1px);
+  filter: grayscale(1) brightness(1.2) blur(1px); }
+
+.B1.deep.blur {
+  -webkit-filter: grayscale(1) brightness(1.2) blur(2px);
+  filter: grayscale(1) brightness(1.2) blur(2px); }
 
 /* kawa */
 .kawa {
-  -webkit-filter: opacity(90%) contrast(170%) brightness(0.9) saturate(150%);
-  filter: opacity(90%) contrast(170%) brightness(0.9) saturate(150%); }
-  .kawa .light.blur {
-    -webkit-filter: opacity(90%) contrast(170%) brightness(0.9) saturate(150%) blur(2px);
-    filter: opacity(90%) contrast(170%) brightness(0.9) saturate(150%) blur(2px); }
-  .kawa .deep.blur {
-    -webkit-filter: opacity(90%) contrast(170%) brightness(0.9) saturate(150%) blur(4px);
-    filter: opacity(90%) contrast(170%) brightness(0.9) saturate(150%) blur(4px); }
+  -webkit-filter: opacity(0.9) contrast(1.5) brightness(0.9) saturate(1.5);
+  filter: opacity(0.9) contrast(1.5) brightness(0.9) saturate(1.5); }
+
+.kawa.light.blur {
+  -webkit-filter: opacity(0.9) contrast(1.5) brightness(0.9) saturate(1.5) blur(1px);
+  filter: opacity(0.9) contrast(1.5) brightness(0.9) saturate(1.5) blur(1px); }
+
+.kawa.deep.blur {
+  -webkit-filter: opacity(0.9) contrast(1.5) brightness(0.9) saturate(1.5) blur(2px);
+  filter: opacity(0.9) contrast(1.5) brightness(0.9) saturate(1.5) blur(2px); }
+
+/* gill */
+.gill {
+  -webkit-filter: contrast(1.3) sepia(0.3) saturate(1.3) hue-rotate(-10deg) brightness(0.95);
+  filter: contrast(1.3) sepia(0.3) saturate(1.3) hue-rotate(-10deg) brightness(0.95); }
+
+.gill.light.blur {
+  -webkit-filter: contrast(1.3) sepia(0.3) saturate(1.3) hue-rotate(-10deg) brightness(0.95) blur(1px);
+  filter: contrast(1.3) sepia(0.3) saturate(1.3) hue-rotate(-10deg) brightness(0.95) blur(1px); }
+
+.gill.deep.blur {
+  -webkit-filter: contrast(1.3) sepia(0.3) saturate(1.3) hue-rotate(-10deg) brightness(0.95) blur(1px);
+  filter: contrast(1.3) sepia(0.3) saturate(1.3) hue-rotate(-10deg) brightness(0.95) blur(1px); }
 
 /*# sourceMappingURL=filterawesome.css.map */

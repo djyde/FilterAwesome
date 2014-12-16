@@ -3,38 +3,70 @@
   filter: $arg;
 }
 
-$light-blur: blur(2px);
-$deep-blur: blur(4px);
+$light-blur: blur(1px);
+$deep-blur: blur(2px);
+
+/* blur */
+.light.blur{
+  @include filter($light-blur);
+}
+
+.deep.blur{
+  @include filter($deep-blur);
+}
 
 
 /* main filter */
 
+/*
+
+1.B1
+2.kawa
+3.gill
+
+*/
+
+
 /* B1 */
-$B1: grayscale(100%);
+$B1: grayscale(1) brightness(1.2);
 
 .B1{
   @include filter($B1);
+}
 
-  .light.blur{
-    @include filter($B1 $light-blur);
-  }
+.B1.light.blur{
+  @include filter($B1 $light-blur);
+}
 
-  .deep.blur{
-    @include filter($B1 $deep-blur);
-  }
+.B1.deep.blur{
+  @include filter($B1 $deep-blur);
 }
 
 /* kawa */
-$kawa: opacity(90%) contrast(170%) brightness(0.9) saturate(150%);
+$kawa: opacity(0.9) contrast(1.5) brightness(0.9) saturate(1.5);
 
 .kawa{
   @include filter($kawa);
+}
 
-  .light.blur{
-    @include filter($kawa $light-blur);
-  }
+.kawa.light.blur{
+  @include filter($kawa $light-blur);
+}
 
-  .deep.blur{
+.kawa.deep.blur{
     @include filter($kawa $deep-blur);
-  }
+}
+
+/* gill */
+$gill: contrast(1.3) sepia(0.3) saturate(1.3) hue-rotate(-10deg) brightness(0.95);
+.gill{
+  @include filter($gill);
+}
+
+.gill.light.blur{
+  @include filter($gill $light-blur);
+}
+
+.gill.deep.blur{
+  @include filter($gill $light-blur);
 }
