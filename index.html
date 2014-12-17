@@ -1,118 +1,113 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>FilterAwesome</title>
-		<link rel="stylesheet" type="text/css" href="static/css/semantic.min.css">
-		<link rel="stylesheet" type="text/css" href="filterawesome.css">
-		<link href='http://fonts.useso.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-    	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    	<script type="text/javascript" src="static/js/zepto.min.js"></script>
-		<style type="text/css">
-			.name{
-				font-size: 48px;
-				text-align: center;
-				font-family: 'Indie Flower', cursive;
-			}
-			.code{
-				font-weight: bold;
-				background-color: #564f8a;
-				color: white;
-				font-size: 18px;
-				padding: 12px;
-			}
-			header{
-				text-align: center;
-			}
-			footer{
-				text-align: center;
-				margin: 24px;
-			}
-			#quickstart{
-				text-align: center;
-			}
-		</style>
+  <head>
+    <title>FilterAwesome</title>
+    <link rel="stylesheet" type="text/css" href="static/css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="filterawesome.css">
+    <link href='http://fonts.useso.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <script type="text/javascript" src="static/js/zepto.min.js"></script>
+    <style type="text/css">
+      .name{
+        font-size: 48px;
+        text-align: center;
+        font-family: 'Indie Flower', cursive;
+      }
+      .code{
+        font-weight: bold;
+        background-color: #564f8a;
+        color: white;
+        font-size: 18px;
+        padding: 12px;
+      }
+      header{
+        text-align: center;
+      }
+      footer{
+        text-align: center;
+        margin: 24px;
+      }
+      #quickstart{
+        text-align: center;
+      }
+    </style>
 
-		<script type="text/javascript">
-			$(document).ready(function(){
-				var show = $('.show')
-				$('.fs').change(function(){
-					switch($(this).val()){
-						case 'B1':
-							show.removeClass().addClass('ui image centered show B1');
-							break;
-						case 'kawa':
-							show.removeClass().addClass('ui image centered show kawa');
-							break;
-						case 'gill':
-							show.removeClass().addClass('ui image centered show gill');
-							break
-						case 'fongsor':
-							show.removeClass().addClass('ui image centered show fongsor');
-							break
-						case 'mi':
-							show.removeClass().addClass('ui image centered show mi');
-							break
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var show = $('.show');
+        $('[data-behaviors~=change-setting]').change(function(){
+          show.attr('class',
+            ['ui',
+             'image',
+             'centered',
+             'show',
+             $('[data-behaviors~=change-setting]')[0].value,
+             $('[data-behaviors~=change-setting]')[1].value
+            ].join(' '));
+        });
+      })
+    </script>
 
-					}
-				})
-			})
-		</script>
+  </head>
 
-	</head>
+  <body>
+    <header>
+      <h1 class="name">FilterAwesome</h1>
+      <h5>*FilterAwesome* is a CSS filter library.</h5>
 
-	<body>
-		<header>
-			<h1 class="name">FilterAwesome</h1>
-			<h5>*FilterAwesome* is a CSS filter library.</h5>
+      <a class="ui labeled icon button" href="https://raw.githubusercontent.com/djyde/FilterAwesome/master/filterawesome.css">
+        <i class="download icon"></i> Downlaod
+      </a>
+      <p style="margin-top: 12px;">Latest version: Alpha</p>
+      <div class="ui text menu">
+        <a href="https://github.com/djyde/filterawesome" class="item">
+          <i class="github icon"></i> Github
+        </a>
+      </div>
+    </header>
+    <div class="ui header horizontal divider">Showcase</div>
+    <div style="text-align: center; margin-top: 24px; margin-bottom: 24px;">
+      <select data-behaviors="change-setting">
+        <option value="none">Select a filter</option>
+        <option value="B1">B1</option>
+        <option value="kawa">kawa</option>
+        <option value="gill">gill</option>
+        <option value="fongsor">fongsor</option>
+        <option value="mi">mi</option>
+      </select>
+      <select data-behaviors="change-setting">
+        <option value="none">Add a blur effect</option>
+        <option value="deep blur">deep blur</option>
+        <option value="light blur">light blur</option>
+      </select>       
+    </div>
+    <div class="ui grid">
+      <div class="center aligned two column row">
+        <div class="column">
+          <img class="ui image centered" src="http://7mnoy7.com1.z0.glb.clouddn.com/pho.jpg?imageView2/2/w/640/q/100">
+          
+        </div>
+        <div class="column">
+          <img class="ui image centered show" src="http://7mnoy7.com1.z0.glb.clouddn.com/pho.jpg?imageView2/2/w/640/q/100">
+        </div>
+      </div>
 
-			<a class="ui labeled icon button" href="https://raw.githubusercontent.com/djyde/FilterAwesome/master/filterawesome.css">
-				<i class="download icon"></i> Downlaod
-			</a>
-			<p style="margin-top: 12px;">Latest version: Alpha</p>
-			<div class="ui text menu">
-				<a href="https://github.com/djyde/filterawesome" class="item">
-					<i class="github icon"></i> Github
-				</a>
-			</div>
-		</header>
-		<div class="ui header horizontal divider">Showcase</div>
-		<div style="text-align: center; margin-top: 24px; margin-bottom: 24px;">
-			<select class="fs">
-				<option>Select a filter</option>
-				<option value="B1">B1</option>
-				<option value="kawa">kawa</option>
-				<option value="gill">gill</option>
-				<option value="fongsor">fongsor</option>
-				<option value="mi">mi</option>
-			</select>				
-		</div>
-		<div class="ui grid">
-			<div class="center aligned two column row">
-				<div class="column">
-					<img class="ui image centered" src="http://7mnoy7.com1.z0.glb.clouddn.com/pho.jpg?imageView2/2/w/640/q/100">
-					
-				</div>
-				<div class="column">
-					<img class="ui image centered show" src="http://7mnoy7.com1.z0.glb.clouddn.com/pho.jpg?imageView2/2/w/640/q/100">
-				</div>
-			</div>
+    </div>
 
-		</div>
+    <div class="ui header horizontal divider">Quick Start</div>
+    <div id="quickstart">
+      <h1>1. Link CSS</h1>
+      <p class="code">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;path/to/filterawesome.css&quot; /&gt;</p>
 
-		<div class="ui header horizontal divider">Quick Start</div>
-		<div id="quickstart">
-			<h1>1. Link CSS</h1>
-			<p class="code">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;path/to/filterawesome.css&quot; /&gt;</p>
+      <h1>2. Add class</h1>
+      <p class="code">&lt;img src=&quot;foo.jpg&quot; class=&quot;[filter name]&quot; /&gt;</p>
 
-			<h1>2. Add class</h1>
-			<p class="code">&lt;img src=&quot;foo.jpg&quot; class=&quot;[filter name]&quot; /&gt;</p>
-
-			<h2>3. Bonus: Blur!</h2>
-			<p>Every filter had one <b>light blur</b> and one <b>deep blur</b> class. Like below:</p>
-			<p class="code">&lt;img class=&quot;fongsor light blur&quot; src=&quot;foo.jpg&quot;/&gt;</p>
-		</div>
-		<footer>
-			Create by <a href="https://github.com/djyde/">Randy</a>
-		</footer>
-	</body>
+      <h2>3. Bonus: Blur!</h2>
+      <p>Every filter had one <b>light blur</b> and one <b>deep blur</b> class. Like below:</p>
+      <p class="code">&lt;img class=&quot;fongsor light blur&quot; src=&quot;foo.jpg&quot;/&gt;</p>
+    </div>
+    <footer>
+      Create by <a href="https://github.com/djyde/">Randy</a>
+    </footer>
+  </body>
 </html>
