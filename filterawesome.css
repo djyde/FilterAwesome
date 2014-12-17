@@ -60,12 +60,12 @@
   filter: contrast(1.72) brightness(1.2) opacity(0.75) sepia(0.2); }
 
 .fongsor.light.blur {
-  -webkit-filter: grayscale(1) contrast(1.45) opacity(0.88) brightness(0.8) sepia(0.5) blur(1px);
-  filter: grayscale(1) contrast(1.45) opacity(0.88) brightness(0.8) sepia(0.5) blur(1px); }
+  -webkit-filter: contrast(1.72) brightness(1.2) opacity(0.75) sepia(0.2) blur(1px);
+  filter: contrast(1.72) brightness(1.2) opacity(0.75) sepia(0.2) blur(1px); }
 
 .fongsor.deep.blur {
-  -webkit-filter: grayscale(1) contrast(1.45) opacity(0.88) brightness(0.8) sepia(0.5) blur(2px);
-  filter: grayscale(1) contrast(1.45) opacity(0.88) brightness(0.8) sepia(0.5) blur(2px); }
+  -webkit-filter: contrast(1.72) brightness(1.2) opacity(0.75) sepia(0.2) blur(2px);
+  filter: contrast(1.72) brightness(1.2) opacity(0.75) sepia(0.2) blur(2px); }
 
 .mi {
   -webkit-filter: sepia(0.68) contrast(1.18) grayscale(0.1);
